@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Encode Sans Thin";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-100-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans ExtraLight";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-200-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans Light";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-300-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans Regular";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-400-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans Medium";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-500-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans SemiBold";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-600-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans Bold";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-700-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans ExtraBold";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-800-normal.woff);
+}
+@font-face {
+    font-family: "Encode Sans Black";
+    src: url(../fonts/encode-sans/webfonts/encode-sans-latin-900-normal.woff);
+}
+
+
+
+
+:root {
+    --primary: #000000;
+    --secondary: #2f4550;
+    --tertiary: #586f7c;
+    --quaternary: #b8dbd9;
+    --quinary: #f4f4f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Encode Sans Medium";
+}
+
+main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+    color: var(--quinary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sidebar Styles */
+main .sidebar {
+    min-width: 200px;
+    width: 15%;
+    height: 100vh;
+    background: var(--secondary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+main .sidebar > .sideitem {
+    display: flex;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border: solid 1px rgba(0, 0, 0, 0);
+    transition: all 300ms;
+}
+main .sidebar > .sideitem:hover {
+    border: solid 1px var(--tertiary);
+}
+
+main .sidebar > .sideitem .baricon {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+main .sidebar > .sideitem .baricon svg {
+    fill: var(--quinary);
+    width: 100%;
+    height: 100%;
+}
+main .sidebar > .sideitem .barname {
+    width: calc(100% - 50px);
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+
+main .sidebar .activebar {
+    background-color: var(--tertiary);
+}
+
+main .sidebar > .divider {
+    width: 90%;
+    height: 1px;
+    background: var(--quinary);
+    margin: 5px 0;
+}
+
+main .sidebar .addedfonts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main .sidebar .addedfonts > .barfont {
+    display: flex;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border: solid 1px rgba(0, 0, 0, 0);
+    transition: all 300ms;
+}
+
+main .sidebar .addedfonts > .barfont:hover {
+    border: solid 1px var(--tertiary);
+}
+
+main .sidebar .addedfonts > .barfont .fonticon {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+}
+main .sidebar .addedfonts > .barfont .fonticon svg {
+    fill: var(--quinary);
+    width: 100%;
+    height: 100%;
+}
+main .sidebar .addedfonts > .barfont .fontname {
+    width: calc(100% - 50px);
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+
+/* Font View (Slides) Styles */
+main .fontview {
+    width: 85%;
+    height: 100vh;
+    background: var(--primary);
+    overflow-y: visible;
+}
+
+main .fontview .viewslide {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+main .fontview .activeslide {
+    visibility: visible;
+}
+
+main .fontview .homeslide {
+    /* background: dimgray; */
+}
+main .fontview .exploreslide {
+    /* background: red; */
+}
+main .fontview .fontslide {
+    /* background: blue; */
+}
