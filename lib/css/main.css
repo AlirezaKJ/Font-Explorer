@@ -183,7 +183,7 @@ main .fontview {
 main .fontview .viewslide {
     position: absolute;
     display: block;
-    width: 100%;
+    width: calc(100vw - 200px);
     height: 100%;
     visibility: hidden;
 }
@@ -192,12 +192,21 @@ main .fontview .activeslide {
     visibility: visible;
 }
 
-main .fontview .homeslide {
-    /* background: dimgray; */
+main .fontview .viewslide .slideheader {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-main .fontview .exploreslide {
-    /* background: red; */
+
+main .fontview .viewslide .slideheader .slidetitle {
+    text-align: center;
+    font-size: 30px;
 }
-main .fontview .fontslide {
-    /* background: blue; */
+
+main .fontview .viewslide .fontexplore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
