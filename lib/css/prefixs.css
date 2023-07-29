@@ -29,3 +29,16 @@
 .italic {
     font-style: italic; 
 }
+
+.condense {
+    font-stretch: condensed;
+}
+
+.smallcaps {
+    font-variant: small-caps;
+}
+
+
+.uif {
+    font-family: var(--uifont);
+}

@@ -21,6 +21,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    caret-color: var(--quinary);
 }
 
 body {
@@ -115,32 +117,30 @@ main .slidebar .slide {
     position: absolute;
     top: 0;
     min-height: 100vh;
-    display: none;
+    display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 300ms 0ms, visibility 0ms 300ms, display 0ms 300ms;
+    transition: all 300ms;
 
 }
 main .slidebar .activeslide {
-    transition: opacity 300ms 0ms, visibility 0ms 300ms, display 0ms 300ms;
     visibility: visible;
     opacity: 1;
-    display: flex;
 }
 
 main .slidebar .slide .title {
-    width: 100%;
+    width: var(--contentwidth);
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 15px;
 }
 main .slidebar .slide .title #slidetitleicon {
@@ -171,10 +171,6 @@ main .slidebar .slide .content {
 main .slidebar #fontpageslide {
     font-family: var(--slideshowfont) !important;
 }
-main .slidebar #fontpageslide .title {
-    width: var(--contentwidth);
-    justify-content: flex-start;
-}
 
 main .slidebar #fontpageslide .title #slidetitletext {
     font-family: var(--uifont);
@@ -189,18 +185,85 @@ main .slidebar #fontpageslide .quote {
     font-weight: 300;
 }
 main .slidebar #fontpageslide .weights {
-    width: var(--contentwidth);
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+main .slidebar #fontpageslide .weights .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+main .slidebar #fontpageslide .weights .header .description {
+    width: 25%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 56px;
+    line-height: 100px;
+    font-weight: 300;
+}
+main .slidebar #fontpageslide .weights .header .controls {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+main .slidebar #fontpageslide .weights .header .controls .btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--tertiary);
+    cursor: pointer;
+    border: solid 2px rgba(255, 255, 255, 0);
+    transition: 150ms all;
+}
+main .slidebar #fontpageslide .weights .header .controls .btn:hover {
+    scale: 1.5;
+}
+main .slidebar #fontpageslide .weights .header .controls .toggledbtn {
+    background-color: var(--quaternary);
+    border: solid 2px white;
+}
+main .slidebar #fontpageslide .header .controls .btn svg {
+    width: 70%;
+    height: 70%;
+}
 main .slidebar #fontpageslide .weights .weightbars {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
     width: 100%;
     height: 150px;
     font-size: 40px;
+    transition: all 300ms;
+}
+main .slidebar #fontpageslide .weights .weightbars:hover {
+    border: 1px solid var(--quaternary);
+    padding: 0 30px;
+}
+main .slidebar #fontpageslide .weights .weightbars .w100 {
+    font-size: 15px;
+    height: 15px;
+    line-height: 15px;
+
+}
+main .slidebar #fontpageslide .weights .weightbars span {
+    width: 100%;
+    height: 110px;
+    line-height: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
