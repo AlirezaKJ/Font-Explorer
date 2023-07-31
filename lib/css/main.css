@@ -180,9 +180,12 @@ main .slidebar #fontpageslide .quote {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 600px;
-    font-size: 74px;
+    height: 500px;
+    width: 100%;
+    font-size: 4vw;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
 }
 main .slidebar #fontpageslide .weights {
     width: 100%;
@@ -204,7 +207,7 @@ main .slidebar #fontpageslide .weights .header .description {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: 56px;
+    font-size: 2vw;
     line-height: 100px;
     font-weight: 300;
 }
@@ -246,7 +249,7 @@ main .slidebar #fontpageslide .weights .weightbars {
     justify-content: flex-start;
     width: 100%;
     height: 150px;
-    font-size: 40px;
+    font-size: 2.2vw;
     transition: all 300ms;
 }
 main .slidebar #fontpageslide .weights .weightbars:hover {
