@@ -83,6 +83,16 @@ main .sidebar .sidebaritem .icon {
 main .sidebar .sidebaritem span {
     font-size: 16px;
     font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main .sidebar .sidebaritem .closeicon {
+    transition: all 300ms;
+    opacity: 0;
+}
+main .sidebar .sidebaritem:hover .closeicon {
+    opacity: 1;
 }
 main .sidebar .separator {
     width: 85%;
@@ -98,7 +108,13 @@ main .sidebar .fontsitems {
     flex-direction: column;
     gap: 10px;
 }
-
+/* 
+main .sidebar .fontsitems section .icon {
+    width: 20%;
+} */
+main .sidebar .fontsitems section span {
+    width: 60%;
+}
 main .slidebar {
     position: absolute;
     left: var(--sidebarwidth);
