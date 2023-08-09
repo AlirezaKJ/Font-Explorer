@@ -133,7 +133,7 @@ main .slidebar .slide {
     position: absolute;
     top: 0;
     min-height: 100vh;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -146,6 +146,7 @@ main .slidebar .slide {
 main .slidebar .activeslide {
     visibility: visible;
     opacity: 1;
+    display: flex;
 }
 
 main .slidebar .slide .title {
@@ -341,6 +342,7 @@ main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordionbtn {
 main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordionbtn span {
     width: calc(100% - 50px);
     text-indent: 10px;
+    font-family: var(--uifont);
 }
 main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordionbtn .icon {
     width: 50px;
