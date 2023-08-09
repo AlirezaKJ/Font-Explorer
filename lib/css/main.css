@@ -286,3 +286,119 @@ main .slidebar #fontpageslide .weights .weightbars span {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+main .slidebar #fontpageslide .glyphs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px 0;
+    /* height: 100vh; */
+}
+main .slidebar #fontpageslide .glyphs .description {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2vw;
+    font-family: var(--uifont);
+    line-height: 100px;
+    font-weight: 300;
+}
+main .slidebar #fontpageslide .glyphs .lettertable {
+    width: 50%;
+    height: 90vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main .slidebar #fontpageslide .glyphs .lettertable::-webkit-scrollbar {
+    width: 2px;
+}
+main .slidebar #fontpageslide .glyphs .lettertable::-webkit-scrollbar-thumb {
+    background-color: var(--quinary);
+}
+main .slidebar #fontpageslide .glyphs .lettertable::-webkit-scrollbar-track {
+    background-color: var(--quaternary);
+}
+main .slidebar #fontpageslide .glyphs .lettertable .accordion {
+    height: fit-content;
+    width: 100%;
+    transition: all 300ms;
+    margin: 20px 0;
+}
+main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordionbtn {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 300ms;
+}
+main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordionbtn span {
+    width: calc(100% - 50px);
+    text-indent: 10px;
+}
+main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordionbtn .icon {
+    width: 50px;
+    height: 50px;
+    background-image: url(../assets/keyboard_arrow_up_white_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+main .slidebar #fontpageslide .glyphs .lettertable .openedaccordion .accordionbtn .icon {
+    background-image: url(../assets/keyboard_arrow_down_white_24dp.svg);
+
+}
+main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordioncontent {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+    height: max-content;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+main .slidebar #fontpageslide .glyphs .lettertable .openedaccordion .accordioncontent {
+    height: 0px !important;
+}
+main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordioncontent .tableitem {
+    border: solid 1px var(--quinary);
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: var(--primary);
+    transition: scale 100ms, background 100ms;
+    overflow: visible;
+}
+main .slidebar #fontpageslide .glyphs .lettertable .accordion .accordioncontent .tableitem:hover {
+    scale: 1.2;
+    border: solid 0px white !important;
+    background: var(--quaternary);
+}
+main .slidebar #fontpageslide .glyphs .lettertable .openedaccordion .accordioncontent .tableitem {
+    border: solid 0px white !important;
+}
+
+main .slidebar #fontpageslide .glyphs .letterview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 90vh;
+}
+main .slidebar #fontpageslide .glyphs .letterview span {
+    font-size: 16vw;
+    font-family: var(--slideshowfont);
+    font-weight: 300;
+}
