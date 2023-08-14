@@ -1,4 +1,4 @@
-# Font-Explorer <a href="https://www.buymeacoffee.com/alirezakj" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 100px !important;" ></a>
+# Font-Explorer <a href="https://www.buymeacoffee.com/alirezakj" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 100px !important;" ></a><a href="https://fontexplorer.net" style="color: black; font-size: 20px; margin: 0 10px; padding: 5px 20px; background: lightgray; border-radius: 5px;" target="_blank">.net</a>
 a simple web application to watch and compare each font with different styles and decorations
 
 
