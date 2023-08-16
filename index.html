@@ -9,7 +9,7 @@
     <script src="lib/js/LSDB.js"></script>
     <title>Font Explorer</title>
 </head>
-<body>
+<body onload="loadinganim()">
     <main>
         <div class="sidebar">
             <section onclick="home()" style="margin-top: 10px;" class="sidebaritem home">
@@ -3314,6 +3314,11 @@
             </div>
         </div>
     </main>
+
+    <div id="loading">
+        <span id="loadingtext"></span>
+        <span id="loadingversion">Version 1.0</span>
+    </div>
 
     <script src="lib/js/main.js"></script>
     <script src="lib/js/explore.js"></script>

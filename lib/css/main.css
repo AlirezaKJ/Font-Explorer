@@ -32,6 +32,32 @@ body {
     overflow-x: hidden;
 }
 
+#loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+    color: var(--quinary);
+    transition: all 400ms;
+    gap: 10vh;
+}
+#loading #loadingtext {
+    font-size: 80px;
+    transition: all 200ms;
+}
+#loading #loadingversion {
+    font-size: 30px;
+    font-weight: 900;
+    transition: all 200ms;
+    opacity: 0;
+}
+
 main {
     position: absolute;
     top: 0;
