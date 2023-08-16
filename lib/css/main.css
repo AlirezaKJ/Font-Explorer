@@ -255,6 +255,7 @@ main .slidebar #explorepageslide .content .fontlist .fontitembox .row1 .fontname
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 30px;
 }
 main .slidebar #explorepageslide .content .fontlist .fontitembox .row1 .btns {
     height: 100%;
@@ -293,27 +294,24 @@ main .slidebar #explorepageslide .content .fontlist .fontitembox .row2 {
 }
 main .slidebar #explorepageslide .content .fontlist .fontitembox .row2 .fontcontent {
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     margin-left: 10px;
     white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 40px;
+    font-size: 2vw;
     font-weight: 300;
 }
-
 
 main .slidebar #fontpageslide {
     font-family: var(--slideshowfont) !important;
 }
-
 main .slidebar #fontpageslide .title #slidetitletext {
     font-family: var(--uifont);
 }
-
 main .slidebar #fontpageslide .quote {
     display: flex;
     align-items: center;
