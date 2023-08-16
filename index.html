@@ -28,22 +28,24 @@
                     Explorer
                 </span>
             </section>
-            <section onclick="settings()" class="sidebaritem settings">
+            <!-- TODO: add settings slide -->
+            <!-- <section onclick="settings()" class="sidebaritem settings">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="48px" viewBox="0 0 24 24" width="48px" fill="#FFFFFF"><rect fill="none" height="24" width="24"/><path d="M19.5,12c0-0.23-0.01-0.45-0.03-0.68l1.86-1.41c0.4-0.3,0.51-0.86,0.26-1.3l-1.87-3.23c-0.25-0.44-0.79-0.62-1.25-0.42 l-2.15,0.91c-0.37-0.26-0.76-0.49-1.17-0.68l-0.29-2.31C14.8,2.38,14.37,2,13.87,2h-3.73C9.63,2,9.2,2.38,9.14,2.88L8.85,5.19 c-0.41,0.19-0.8,0.42-1.17,0.68L5.53,4.96c-0.46-0.2-1-0.02-1.25,0.42L2.41,8.62c-0.25,0.44-0.14,0.99,0.26,1.3l1.86,1.41 C4.51,11.55,4.5,11.77,4.5,12s0.01,0.45,0.03,0.68l-1.86,1.41c-0.4,0.3-0.51,0.86-0.26,1.3l1.87,3.23c0.25,0.44,0.79,0.62,1.25,0.42 l2.15-0.91c0.37,0.26,0.76,0.49,1.17,0.68l0.29,2.31C9.2,21.62,9.63,22,10.13,22h3.73c0.5,0,0.93-0.38,0.99-0.88l0.29-2.31 c0.41-0.19,0.8-0.42,1.17-0.68l2.15,0.91c0.46,0.2,1,0.02,1.25-0.42l1.87-3.23c0.25-0.44,0.14-0.99-0.26-1.3l-1.86-1.41 C19.49,12.45,19.5,12.23,19.5,12z M12.04,15.5c-1.93,0-3.5-1.57-3.5-3.5s1.57-3.5,3.5-3.5s3.5,1.57,3.5,3.5S13.97,15.5,12.04,15.5z"/></svg>
                 </div>
                 <span>
                     Settings
                 </span>
-            </section>
+            </section> -->
             <div class="separator"></div>
             <div id="fontsitems" class="fontsitems">
-                <section onclick="font(0)" class="sidebaritem fontitem">
+                
+                <section onclick="font(0,'Open Sans')" class="sidebaritem fontitem">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9.93 13.5h4.14L12 7.98 9.93 13.5zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4.29 15.88l-.9-2.38H9.17l-.89 2.37c-.14.38-.5.63-.91.63-.68 0-1.15-.69-.9-1.32l4.25-10.81c.22-.53.72-.87 1.28-.87s1.06.34 1.27.87l4.25 10.81c.25.63-.22 1.32-.9 1.32-.4 0-.76-.25-.91-.62z"/></svg>
                     </div>
-                    <span>${element}</span>
-                    <div class="icon closeicon">
+                    <span>Open Sans</span>
+                    <div onclick="delfont(0)" class="icon closeicon">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none" opacity=".87"/><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm4.3 14.3c-.39.39-1.02.39-1.41 0L12 13.41 9.11 16.3c-.39.39-1.02.39-1.41 0-.39-.39-.39-1.02 0-1.41L10.59 12 7.7 9.11c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L12 10.59l2.89-2.89c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41L13.41 12l2.89 2.89c.38.38.38 1.02 0 1.41z"/></svg>
                     </div>
                 </section>
@@ -67,7 +69,33 @@
                 </div>
                 <div class="separator"></div>
                 <div class="content">
-                    Welcome to Font Explorer <span id="version">V1.0</span>
+                    <h2>Overview <span id="version">v1.0</span></h2>
+                    <span>
+                        Font Explorer is a tool that facilitates designers, typographers, and front-end developers to view and compare diverse fonts,
+                        whether they are local or provided by Font Explorer. This software is an open-source project, which means users can contribute
+                        to its development and report any issues they encounter while using it. Users can view fonts in various styles, including condensed
+                        and italic modes, small caps, and different weights. Moreover, changing the weight of one text content automatically changes others
+                        as well, making it easier for users to experiment with different font styles.
+                    </span><br><br>
+                    <span>
+                        To access local fonts installed on a user's computer, users can simply rename the font title in the opened font tab to the name
+                        of the locally installed font. This feature provides users with a hassle-free experience when viewing local fonts, thus making
+                        the software more efficient and user-friendly.
+                    </span><br><br>
+                    <span>
+                        In addition, the glyph section of the font tab provides access to a wide range of glyphs, including Latin lowercase, Latin uppercase,
+                        Greek lowercase, Greek uppercase, Cyrillic lowercase, Cyrillic uppercase, Hebrew, numbers, common Latin, punctuation, and currency symbols.
+                        This feature is particularly useful for designers and typographers who need to access and view different glyphs for their work.
+                    </span><br><br>
+                    <span>
+                        Fonts provided by Font Explorer are variable fonts and open source, included in the Google and Adobe font libraries. Most of them are licensed under
+                        the <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ofl">SIL Open Font License (OFL)</a> and <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2.0</a>.
+                        This means that users can use and modify these fonts for personal and commercial use without any legal issues.
+                    </span><br><br>
+                    <span>
+                        Therefore, Font Explorer is a powerful tool that provides designers, typographers, and front-end developers with a range of features and functions
+                        to facilitate their work with fonts. With its open-source nature, users can contribute to its development and make it even better for future users.
+                    </span><br><br>
                 </div>
             </div>
             <div id="explorepageslide" class="slide">
@@ -81,15 +109,16 @@
                 </div>
                 <div class="separator"></div>
                 <div class="content">
-                    Explore our showcased font or start exploring fonts installed on your system
                     <div class="fontlist">
                         <div class="fontitembox">
-                            <div class="row">
+                            <div class="row row1">
                                 <span class="fontname"></span>
-                                <div class="downloadfont"></div>
-                                <div class="addfont"></div>
+                                <div class="btns">
+                                    <div class="downloadfont"></div>
+                                    <div class="addfont"></div>
+                                </div>
                             </div>
-                            <div class="row">
+                            <div class="row row2">
                                 <div class="fontcontent">
                                     Dark Reef Rising
                                 </div>
@@ -124,7 +153,7 @@
                 <div class="separator"></div>
                 <div class="quote italic">
                     <span>
-                        “ End just never comes. ”
+                        “ Never mind me while I sit and pretend. ”
                     </span>
                 </div>
                 <div class="content">
