@@ -184,17 +184,17 @@ main .slidebar .slide .content {
     font-weight: 300;
     font-size: 20px;
 }
-
-main .slidebar #homepageslide .content h2 {
-    font-size: 2vw;
-    margin: 60px 0;
-}
-main .slidebar #homepageslide .content h2 #version {
-    font-size: 0.75vw;
-    font-weight: 800;
-}
 main .slidebar #homepageslide .content span {
     font-size: 1.2vw;
+    font-weight: 300;
+}
+main .slidebar #homepageslide .content span h1 {
+    display: inline-block;
+    font-size: 1.8vw;
+}
+
+main .slidebar #homepageslide .content span h1 #version {
+    font-size: 0.5vw;
     font-weight: 300;
 }
 main .slidebar #homepageslide .content span a {
